@@ -1,8 +1,8 @@
-# OOP244 - Introduction to Object Oriented Programming (C++)
-This repository contains my solutions for the OOP244 workshops at Seneca College. Details of each workshop will be inside their directory.
+# OOP244 - Introduction to Object-Oriented Programming (C++)
+This repository contains my solutions for the OOP244 workshops at Seneca College.
 
 ## Workshops list
-#### Workshop 1: Across Translation Units
+#### Workshop 1: Modules
 Subdivide a program into modules, compile each module separately, and construct an executable from the results of each compilation. In Part 2, write a modular program.
 #### Workshop 2: Dynamic Memory, References, Overloading
 Use references to modify the content of variables in other scopes, overload functions, allocate memory at run-time, and deallocate that memory when it is no longer required.
