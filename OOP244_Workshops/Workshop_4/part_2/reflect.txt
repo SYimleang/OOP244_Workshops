@@ -1,0 +1,21 @@
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : 11 June 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+This workshop provided valuable insights into default constructors, overloaded constructors, and destructors, reinforcing my understanding of these concepts. I gained a deeper understanding of how to initialize object instances using constructors and ensure proper memory deallocation through destructors when objects go out of scope. The workshop also served as a helpful refresher on dynamic memory allocation and output formatting. These learnings have further strengthened my knowledge and skills in object-oriented programming.
+
+I faced designing the necessary function problem in this workshop while I was creating necessary functions I designed too less functions in this program but after realizing that I can create new functions to make my program more efficient, I created more functions to reduce the redundancy of my program, but after I review my code again and noticed that some functions are not necessary. So I need to review my code again and keep only the necessary functions for the efficiency of my program.
+Another problem I faced is overloading the constructor. I face a problem when I was trying to run my code, I found that when the tester program passes only one argument to the constructor which need two arguments, my program was crashing because of no default value of my constructor. To fix this I need to set the default value for my constructor parameter.
+
+// In Label.h file
+previous code:
+void setLabel(const char* frameArg, const char* content);
+corrected code:
+void setLabel(const char* frameArg = nullptr, const char* content = nullptr);

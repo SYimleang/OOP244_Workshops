@@ -1,0 +1,30 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : 26 July 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+In this workshop, I learned how to derive a class with resources from a base class which also includes a dynamic CString, override virtual and non-virtual methods of the base class and apply the rule of three to the base and the derived class.
+
+The main problem I faced in this workshop was the overloaded index operator function that I never used before, and I was confused when I try to call this function. I created a new function to get the length of the content attribute but after I study and realized this, I use this function in an appropriate way. Another thing I faced was the memory leaks, when I ran my program on the local computer it worked. But after checking the possible memory leaks, I found that all of my dynamic variables were caused by memory leaks. So I need to debug one by one to find the dynamic variable that did not deallocate.
+
+
+// previous code before call overloaded index operator function
+void HtmlText::write(ostream& os)const {
+...
+	for (int ndx = 0; ndx < Text::getLength(); ndx++){...}
+...
+}
+
+// After fixing it.
+void HtmlText::write(ostream& os)const {
+...
+	for (int ndx = 0; Text::operator[](ndx) != '\0'; ndx++){...}
+...
+}

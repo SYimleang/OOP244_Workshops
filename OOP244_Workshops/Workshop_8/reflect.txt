@@ -1,0 +1,39 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : 18 July 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+In this workshop, I learned about defining a pure virtual function, coding an abstract base class, implementing the behavior declared in a pure virtual function, and explaining the difference between an abstract base class and a concrete class. This program involved multiple modules and multiple files that I had to link together to get the code all the code to work and it is also a good revision of the previous concepts.
+
+The main error that I faced was that I was declaring the 'draw' and 'getSpecs' functions as a part of all classes and declaring them as virtual. I was stuck when trying to run the program and the compiler doesn't know which one I want them to call. So I need to study more and know that it needs to set the template class by creating the draw function as virtual, const and ending with "= 0" and the getSpecs function as virtual and ending with "= 0" to let the compiler know that these function in template class are not the correct function to call.
+
+Previous:
+class Shape {
+	public:
+		virtual ~Shape() = default;
+
+		void getSpecs(istream& in);
+		void draw(ostream& os) const;
+	};
+
+	ostream& operator<<(ostream& os, const Shape& shape);
+	istream& operator>>(istream& in, Shape& shape);
+
+After:
+class Shape {
+	public:
+		virtual ~Shape() = default;
+
+		virtual void getSpecs(istream& in) = 0;		// Virtual function for get content.
+		virtual void draw(ostream& os) const = 0;	// Virtual function for print the content.
+	};
+
+	ostream& operator<<(ostream& os, const Shape& shape);
+	istream& operator>>(istream& in, Shape& shape);

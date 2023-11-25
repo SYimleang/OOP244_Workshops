@@ -1,0 +1,25 @@
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : May 25, 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+
+This workshop helped me to learn important concepts such as the Overload function, Dynamic Memory allocation, and References. The problem that I faced is the Dynamic Memory Allocate and Deallocate which I spent a lot of time to researched and fix the problem when I tried to submit this workshop because memory leak is one of the huge problems for my coding skills that need to be improved.
+
+The in parameter is passing parameter by value, which means the function will copy the value of the argument to the parameter of the function for use inside this function but not affect the original value passed from the calling code. While out parameter is passing the parameter by reference, which means any modification that makes in the function will affect or return a modified value to the original value passed from the calling code.
+
+In my code, the function that receives in parameter is 
+	void display(const Population pop) 
+	bool load(const char datafile[] 
+out parameter is 
+	bool load(struct Population& populates) 
+	bool read(char* psCode)
+	bool read(int& numPop)
+
+
+
+

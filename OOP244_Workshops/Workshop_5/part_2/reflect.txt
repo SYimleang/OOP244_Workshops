@@ -1,0 +1,24 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : 15 June 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+I learned operator overloading in this workshop. The workshop covered a wide range of concepts, including overloading members, helpers, binary, and unary operators. I explored different ways to overload operators effectively and efficiently.
+
+The main problem that I faced was in the lab part. I encountered a challenge while attempting to create a binary standalone helper overloading function in a suitable manner. This involved defining a function that can operate on two objects of a class, providing specific functionality for the operator being overloaded. Despite my efforts, I faced difficulties in properly implementing this function and ensuring its compatibility with the desired binary operator. I sought assistance from my professor to resolve this issue and gain a better understanding of how to effectively and correctly design and implement binary standalone helper overloading functions.
+
+Before:
+double operator+=(double left, const Account& right) {
+        return left += right.m_balance;
+    }
+
+After:
+double operator+=(double& left, const Account& right) {
+        return left += double(right);
+    }

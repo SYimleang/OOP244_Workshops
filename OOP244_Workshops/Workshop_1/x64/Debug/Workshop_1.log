@@ -1,0 +1,12 @@
+﻿  cstring.cpp
+  cstringOrg.cpp
+  cstringTester.cpp
+  Generating Code...
+cstringOrg.obj : error LNK2005: "void __cdecl sdds::strCat(char *,char const *)" (?strCat@sdds@@YAXPEADPEBD@Z) already defined in cstring.obj
+cstringOrg.obj : error LNK2005: "int __cdecl sdds::strCmp(char const *,char const *)" (?strCmp@sdds@@YAHPEBD0@Z) already defined in cstring.obj
+cstringOrg.obj : error LNK2005: "void __cdecl sdds::strCpy(char *,char const *)" (?strCpy@sdds@@YAXPEADPEBD@Z) already defined in cstring.obj
+cstringOrg.obj : error LNK2005: "int __cdecl sdds::strLen(char const *)" (?strLen@sdds@@YAHPEBD@Z) already defined in cstring.obj
+cstringOrg.obj : error LNK2005: "char const * __cdecl sdds::strStr(char const *,char const *)" (?strStr@sdds@@YAPEBDPEBD0@Z) already defined in cstring.obj
+cstringOrg.obj : error LNK2005: "int __cdecl sdds::strnCmp(char const *,char const *,int)" (?strnCmp@sdds@@YAHPEBD0H@Z) already defined in cstring.obj
+cstringOrg.obj : error LNK2005: "void __cdecl sdds::strnCpy(char *,char const *,int)" (?strnCpy@sdds@@YAXPEADPEBDH@Z) already defined in cstring.obj
+C:\Users\Frami\Documents\frame\Repo\OOP244_Workshops\OOP244_Workshops\x64\Debug\Workshop_1.exe : fatal error LNK1169: one or more multiply defined symbols found

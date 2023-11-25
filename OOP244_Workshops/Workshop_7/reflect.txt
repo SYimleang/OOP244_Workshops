@@ -1,0 +1,32 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : 12 July 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+In this workshop, I was able to deepen my understanding of class inheritance. The inherited class used many functions and members from the base class. We also used base class constructors in the derived class to initialize an object (in the inherits class). Furthermore, we overloaded the insertion and extraction operators which made the code more readable and organized.
+
+My main problem was Designing the methods in the inherits class that use the base class method to accomplish the tasks. I got stuck on making the initialize the Truck class by receiving values that include some values that need to assign to private members of MotorVehicle class.
+
+Then I realized that I initialize the MotorVehicle class wrong method. we need to initialize right after the function name and parameter.
+
+My constructor before:
+Truck::Truck(const char* license, int year, double capacity, const char* address) {
+	MotorVehicle(license, year);
+	MotorVehicle::moveTo(address);
+	m_capacity = capacity;
+	m_cargo = 0;
+}
+
+My constructor after fixed:
+Truck::Truck(const char* license, int year, double capacity, const char* address):MotorVehicle(license, year) {
+	MotorVehicle::moveTo(address);
+	m_capacity = capacity;
+	m_cargo = 0;
+}

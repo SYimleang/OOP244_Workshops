@@ -1,0 +1,15 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : 5 July 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+While completing this workshop, I grew comfortable with overloading operators and file handling. I overloaded copy assignment operators, insertion operators, and many more, which helped me practice these concepts. Also, I used ifstream and ofstream objects to read from files and write to files which is something different in contrast to reading and writing to the terminal which is what I can use in the future.
+
+The main problem that I faced in this workshop was about how to use and call functions of ifstream and ofstream. Even though all my concepts were clear, I was confused about using the function in appropriate ways and I was facing a very minor issue that took me a long time to solve. Basically, I was trying to input the content into a file character by character in saveAs function of the TextFile class but in C++ we can input the string into the file directly I was trying to use it but I had no idea how to use it. Searching for the correct way to do it makes my life easier. Apart from that, I believe the workshop was pretty straight forward and I got to learn and practice a lot.

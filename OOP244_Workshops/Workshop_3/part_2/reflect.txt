@@ -1,0 +1,34 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Sasawat Yimleang
+Student ID#: 114036221
+Email      : syimleang@myseneca.ca
+Date of completion    : June 4, 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+This workshop provided me with a comprehensive understanding of key concepts in C++, such as classes, member functions, and privacy. By utilizing getters and setters, I gained insight into how access control can be effectively managed within a class. This level of control surpasses what was possible with structures in our previous IPC144 course, offering a more refined approach. this workshop served as an excellent opportunity to refresh my knowledge of dynamic memory allocation and modular programming. 
+
+During this workshop, I encountered a challenge when working with const member functions and their interaction with getters. Initially, I found that I was unable to access other member functions within a const function. To address this issue, I conducted research online and discovered a solution: by adding const in front of all the getters, I could prevent them from modifying private values within the class. This modification allowed me to successfully call one getter function from another, resolving the previous error.
+
+Example:
+totalCalorie();		// No const function
+void footer()const;	// This function call totalCalorie() function
+/* Result: 'int sdds::CalorieList::totalCalorie(void)': cannot convert 'this' pointer from 'const sdds::CalorieList' to 'sdds::CalorieList &' */
+
+Need to fix to:
+totalCalorie()const;	// With const function
+void footer()const;	// This function call totalCalorie() function
+
+
+and
+void Title();		// No const function
+void display()const;	// This function call Title() function
+/* Result: 'void sdds::CalorieList::Title(void)': cannot convert 'this' pointer from 'const sdds::CalorieList' to 'sdds::CalorieList &' */
+
+Need to fix to:
+void Title()const;	// With const function
+void display()const;	// This function call Title() function
